@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\title{GRA v4: Alignment in Chaotic Systems}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Lorenz System}
+
+\[
+\dot{x} = \sigma(y - x), \quad
+\dot{y} = x(\rho - z) - y, \quad
+\dot{z} = xy - \beta z
+\]
+
+\section{Lyapunov Exponent}
+
+\[
+\lambda = \lim_{t \to \infty} \frac{1}{t} \log \frac{||\delta x(t)||}{||\delta x(0)||}
+\]
+
+\section{GRA Foam}
+
+\[
+\Phi = \sum_{i \neq j} ||f_i(x) - f_j(x)||^2
+\]
+
+\section{Goal}
+
+Align multiple agents operating on chaotic trajectories.
+
+\end{document}
